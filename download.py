@@ -71,7 +71,7 @@ class downloader:
 			else:
 				time.sleep(1)
 
-		print("\nConverting images to pdf format...")
+		print("\nConverting images to PDF format...")
 		for npage in range(1,npages+1):
 			pdf_bytes=img2pdf.convert(["/tmp/"+self.isbn+"_"+str(npage)+".jpg"])
 			f = open("/tmp/"+self.isbn+"_"+str(npage)+".pdf","wb")
